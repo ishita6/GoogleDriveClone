@@ -1,0 +1,305 @@
+#header{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+#header button{
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    background-image: linear-gradient(rgb(231, 158, 209), rgb(214, 91, 194));
+}
+
+#header button:hover{
+    transform: scale(1.05);
+    background-image: linear-gradient(rgb(243, 237, 241), rgb(245, 240, 244));
+}
+
+
+#breadcrumb{
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+}
+
+#breadcrumb a {
+    background-color: tomato;
+    padding: 10px;
+    border-right: 3px solid rgb(102, 98, 98);
+}
+
+#breadcrumb a:hover {
+    background-color: white;
+    text-decoration: underline;
+}
+
+#container{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.folder{
+    /* background-color: rgb(86, 184, 184); */
+    background-image: linear-gradient(rgb(94, 190, 169), rgb(116, 203, 206));
+    color: white;
+    height: 120px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(98, 125, 216);
+}
+
+.folder div[purpose=name]{
+    margin-top: 80px;
+}
+
+.folder [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.folder [action]:hover{
+    color: blue;
+}
+
+.text-file{
+    /* background-color: rgb(86, 184, 184); */
+    background-color:plum;
+    color: white;
+    height: 120px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(98, 125, 216);
+}
+
+.text-file div[purpose=name]{
+    margin-top: 80px;
+}
+
+.text-file [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-file [action]:hover{
+    color: blue;
+    transform: scale(2);
+}
+
+
+.album{
+    /* background-color: rgb(86, 184, 184); */
+    background-color:rgb(172, 104, 204);
+    color: white;
+    height: 120px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(98, 125, 216);
+}
+
+.album div[purpose=name]{
+    margin-top: 80px;
+}
+
+.album [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.album [action]:hover{
+    color: blue;
+    transform: scale(2);
+}
+
+
+#app{
+    border: 1px solid black;
+    margin:10px;
+}
+
+#app-title-bar{
+    display: flex;
+    background-color: lightcoral;
+    height: 40px;
+}
+
+#app-menu-bar{
+    display: flex;
+    background-color: rgb(128, 223, 240);
+    height: 50px;
+}
+
+#app-title{
+    width: 94%;
+    text-align: center;
+}
+
+#app-body{
+    display: flex;
+    background-color: rgb(235, 240, 206);
+    height: 500px;
+}
+
+.notepad-menu{
+    width: 100%;
+    padding: 5px;
+    
+}
+
+.notepad-menu * {
+    margin: 0px 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.notepad-menu span{
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.notepad-menu span:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: rgb(128, 223, 240);
+}
+
+.notepad-menu [pressed = true]{
+    transform: scale(1.1);
+    background-color: black;
+    color: rgb(128, 223, 240);
+}
+
+.notepad-menu input[type = color]{
+    width: 30px;
+}
+
+.notepad-menu select{
+    height: 20px;
+}
+
+.notepad-body{
+    height: 100%;
+    width: 100%;
+}
+
+.notepad-body textarea{
+    height: 100%;
+    width: 100%;
+}
+
+[purpose = 'download']{
+    display: none;
+}
+
+#win-actions span{
+    cursor: pointer;
+
+}
+#win-actions span:hover{
+    color: blue;
+    transform: scale(1.1);
+}
+
+.notepad-menu input[action = upload]{
+    display: none;
+}
+
+.album-menu{
+    width: 100%;
+    padding: 5px;
+    
+}
+
+.album-menu * {
+    margin: 0px 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.album-menu span{
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.album-menu span:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: rgb(128, 223, 240);
+}
+
+.album-body{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.picture-list{
+    border: 1px solid black;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+.picture-list img{
+    height: 90%;
+    margin:5px;
+    border: 2px solid rgb(10, 9, 9);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.picture-list img:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+
+.picture-list img[pressed=true]{
+    transform: scale(1.02);
+    border: 1px solid black;
+}
+
+.picture-view{
+    border:1px solid black;
+    height: 350px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+.picture-view > div{
+    height: 100%;
+    border: ipx solid rgb(12, 11, 11);
+}
+.picture-view .move-left{
+    width: 15%;
+}
+.picture-view .picture-main{
+    padding: 5px;
+    width: 70%; 
+    display: flex;
+}
+
+.picture-view .picture-main img{
+    height: 100%;
+}
+
+.picture-view .move-right{
+    width: 15%;    
+}
+
+
+
+
